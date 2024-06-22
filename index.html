@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="icon" href="img/Github-desktop-logo-symbol.svg.ico">
+    <style>
+        details::-webkit-details-marker {
+            display:none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navegador de la página (Esto tiene que estar fijo en la página, ser transparente y pillar el background a amarillo cuando se desplaze)-->
+
+    <header class="cabecera" style="padding: 10px;">
+        <a href="#" class="logo"><img src="img/github_logo.png"></a>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pags/about_us.html">Sobre Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    </nav>
+
+    <!--JS para que el menú cambie al hacer scroll-->
+
+    <script type="text/javascript">
+
+        window.addEventListener("scroll", function() {
+            var header = document.querySelector("header");
+            header.classList.toggle("abajo", window.scrollY>0);
+        })
+
+
+    </script>
+
+
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <!-- Main de la página (Esto tiene que va a ser un bloque genérico de texto con el título, una descripción y demás)-->
+
+    <main class="parrafo">
+
+        <div class="elementos_parrafo">
+
+            <h1>Apuntes InfoADE</h1>
+
+            <hr>
+
+            <br>
+
+            <p>Repositorio con apuntes, prácticas y exámenes del doble Grado en Ingeniería Informática
+                y Administración y Dirección de Empresas.
+            </p>
+
+            <br>
+
+            <p>Para acceder a los documentos íntegros en los que se encuentra el contenido, puede hacer clic 
+                directamente en las listas de la parte inferior.
+
+                Los apuntes se encuentran ordenados por Trimestres siguiendo las 3 categorías antes mentadas.
+            </p>
+
+            <br>
+
+            <p><i>En caso de errata en alguno de los recursos agradecemos que se nos contacte en en los correos de contacto 
+                dentro de la sección <b>Sobre Nosotros</b>
+            </i></p>
+
+            <br>
+
+            <p style="text-align: center;"><i>Cualquier sujerencia o contribución acerca del repositorio es bien recibida</i></p>
+
+        </div>
+
+    </main>
+
+
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <!-- Article de la página donde aparecerán las listas en las que se pueden descargar los apuntes (usando las etiquetas details y summary)-->
+
+    <article class="lista_apuntes">
+
+        <div class="apuntes">
+
+            <details id="curso">
+
+                <summary class="año">Primer año</summary>
+
+                <details class="asignatura">
+
+                    <summary>Cálculo</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                <!-------------------------------------------------->
+
+                <details class="asignatura">
+
+                    <summary>Economía Política</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                <!-------------------------------------------------->
+                
+                <details class="asignatura">
+
+                    <summary>Fundamentos Físicos y Tecnológicos</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                <!-------------------------------------------------->
+                
+                <details class="asignatura">
+
+                    <summary>Fundamentos de la Administración y Dirección de Empresas</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                
+                <!-------------------------------------------------->
+                
+                <details class="asignatura">
+
+                    <summary>Fundamentos de la Programación</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                 <!-------------------------------------------------->
+                
+                 <details class="asignatura">
+
+                    <summary>Tecnología y Organización de Computadores</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                <hr>
+
+                <hr>
+
+                <!-------------------------------------------------->
+                
+                <details class="asignatura">
+
+                    <summary>Fundamentos del Software</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                <!-------------------------------------------------->
+                
+                <details class="asignatura">
+
+                    <summary>Historia del Desarrollo Económico y Mundial Contemporáneo</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                <!-------------------------------------------------->
+                
+                <details class="asignatura">
+
+                    <summary>Introducció al Derecho</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                <!-------------------------------------------------->
+                
+                <details class="asignatura">
+
+                    <summary>Matemáticas Empresariales</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                <!-------------------------------------------------->
+                
+                <details class="asignatura">
+
+                    <summary>Metodología de la Programación</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                <!-------------------------------------------------->
+                
+                <details class="asignatura">
+
+                    <summary>Microeconomía</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                <!-------------------------------------------------->
+                
+                <details class="asignatura">
+
+                    <summary>Álgebra y Estructuras Matemáticas</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+            </details>
+
+            
+
+
+<!--------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------->
+
+
+            <details id="curso">
+
+                <summary class="año">Segundo Año</summary>
+
+                <details class="asignatura">
+
+                    <summary>Estructura de Computadores</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                <!-------------------------------------------------->
+
+                <details class="asignatura">
+
+                    <summary>Estructura de Datos</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                <!-------------------------------------------------->
+                
+                <details class="asignatura">
+
+                    <summary>Introducción a las Operaciones Financieras</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                <!-------------------------------------------------->
+                
+                <details class="asignatura">
+
+                    <summary>Introducción al Marketing</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                
+                <!-------------------------------------------------->
+                
+                <details class="asignatura">
+
+                    <summary>Macroeconomía</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                 <!-------------------------------------------------->
+                
+                 <details class="asignatura">
+
+                    <summary>Sistemas Operativos</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="asignatura">
+
+                        <summary>Técnicas Cuantitativas I</summary>
+    
+                        <details class="apartado">
+    
+                            <summary>Exámenes</summary>
+    
+                            <ul class="items">
+                                <li>Item1</li>
+                                <li>Item2</li>
+                                <li>Item3</li>
+                            </ul>
+                            
+                        </details>
+    
+                        <details class="apartado">
+    
+                            <summary>Prácticas</summary>
+    
+                            <ul class="items">
+                                <li>Item1</li>
+                                <li>Item2</li>
+                                <li>Item3</li>
+                            </ul>
+                            
+                        </details>
+    
+                        <details class="apartado">
+    
+                            <summary>Apuntes</summary>
+    
+                            <ul class="items">
+                                <li>Item1</li>
+                                <li>Item2</li>
+                                <li>Item3</li>
+                            </ul>
+                            
+                        </details>
+
+
+                </details>
+
+
+                </details>
+
+                <hr>
+
+                <hr>
+    
+                <!-------------------------------------------------->
+                
+                <details class="asignatura">
+
+                    <summary>Algorítmica</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                <!-------------------------------------------------->
+                
+                <details class="asignatura">
+
+                    <summary>Arquitectura de Computadores</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                <!-------------------------------------------------->
+                
+                <details class="asignatura">
+
+                    <summary>Contabilidad General</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                <!-------------------------------------------------->
+                
+                <details class="asignatura">
+
+                    <summary>Dirección Comercial</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                <!-------------------------------------------------->
+                
+                <details class="asignatura">
+
+                    <summary>Lógica y Métodos Discretos</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                <!-------------------------------------------------->
+                
+                <details class="asignatura">
+
+                    <summary>Técnicas Cuantitativas II</summary>
+
+                    <details class="apartado">
+
+                        <summary>Exámenes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Prácticas</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                    <details class="apartado">
+
+                        <summary>Apuntes</summary>
+
+                        <ul class="items">
+                            <li>Item1</li>
+                            <li>Item2</li>
+                            <li>Item3</li>
+                        </ul>
+                        
+                    </details>
+
+                </details>
+
+                </details>
+
+            </details>
+
+            <details id="curso">
+
+                <summary class="año">Tercer Año</summary>
+
+                <p><i>Proximamente...</i></p>
+
+            </details>
+
+            <details id="curso">
+
+                <summary class="año">Cuarto Año</summary>
+                
+                <p><i>Proximamente...</i></p>
+            </details>
+            
+
+        </div>
+     
+    </article>
+
+
+    <!------------------------------------------------------------------------------------------------------------>
+
+    <!-- Footer de la página en el que se introducira la politica y algunos enlaces a sitios -->
+
+    <footer class="disclaimer">
+
+        <div class="estilo_disclaimer">
+     
+            <a>Quienes Somos</a>
+
+            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">Terminos y condiciones</a>
+
+            <a href="https://grados.ugr.es/informatica-ade/docencia/plan-estudios" target="_blank">Referencias</a>
+
+        </div> 
+
+       <p style="text-align:center;"><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank"><img src="img/CC.png"></a></p>
+
+
+    </footer>
+
+
+    <!------------------------------------------------------------------------------------------------------------>
+
+</body>
+</html>
