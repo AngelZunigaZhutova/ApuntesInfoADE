@@ -1,0 +1,75 @@
+/*Estilos del menú de navegación*/
+
+header {
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    transition: 0.7s;
+    padding: 10px 10px;
+    margin-bottom: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header .logo {
+    position: relative;
+    color: black;
+    font-weight: bold;
+    font-size: 2em;
+    letter-spacing: 2px;
+    transform: 1.5s;
+    text-decoration: none;
+    justify-self: right;
+
+}
+
+.logo img {
+    width: 40px;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    position: relative;
+    font-family: "nunito";
+    color:black;
+    margin: 0 15px;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 600;
+    transition: 0.7s
+}
+
+/*Propiedades que adquiere la clase abajo cunaod se detecta que se realiza un scroll sobre la página*/
+
+header.abajo {
+    background: rgba(255, 215, 0);
+    padding: 5px 10px;
+}
+
+header.abajo ul li a {
+    color: black
+}

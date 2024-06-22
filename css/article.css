@@ -1,0 +1,61 @@
+/*Estilos de la lista con los apuntes*/
+
+article {
+    border: 1px solid black;
+    margin-top: 10px;
+}
+
+.apuntes {
+
+    border: 1px solid black;
+    margin: 10px;
+
+
+}
+
+.apuntes details {
+    margin: 10px;
+}
+
+.año {
+
+    border-bottom: 1px solid black;
+    display: inline;
+    padding: 5px 20px 5px 5px;
+    transition: background 0.5s ease-in-out;
+    cursor:pointer;
+
+}
+
+.año:hover {
+    background-color: black;
+    color: white;
+}
+
+.asignatura {
+    list-style-type: none;
+ 
+}
+
+.asignatura summary {
+    margin-left: 10px;
+    border-bottom: 1px dotted black;
+    display: inline;
+    cursor: pointer;
+}
+
+.asignatura summary:hover {
+    border-bottom: 2px solid black;
+}
+
+.apartado {
+    padding:5px
+}
+
+.apartado ul {
+    list-style-type: none
+}
+
+.apartado ul li {
+    padding-left: 20px  ;
+}

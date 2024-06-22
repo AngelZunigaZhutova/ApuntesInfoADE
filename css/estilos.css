@@ -1,0 +1,8 @@
+/*Link de todos los estilos de la página (esta es la que se enlaza con el html)*/
+
+@import url("global.css");
+@import url("nav.css");
+@import url("main.css");
+@import url("article.css");
+@import url("footer.css");
+@import url("about_us.css");

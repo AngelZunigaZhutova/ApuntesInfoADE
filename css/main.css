@@ -1,0 +1,9 @@
+/*Estilos del parrafo donde se describe que hace la página*/
+
+main {
+    border: 1px solid black;
+}
+
+.parrafo {
+    padding:3rem
+}

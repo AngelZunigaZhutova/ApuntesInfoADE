@@ -1,0 +1,22 @@
+/*Estilos exclusivos de la parte del Sobre Nosotros*/
+
+.salida {
+    background-color: gold;   
+    padding: 5px 10px 5px 10px;
+    margin: 0px;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: white;
+}
+
+
+.perfiles {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+
+
+.cita {
+    padding: 10px;
+}
