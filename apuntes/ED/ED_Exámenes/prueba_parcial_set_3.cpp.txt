@@ -1,0 +1,49 @@
+#include <iostream>
+#include <set>
+#include <stdlib.h>
+#include <vector>
+
+
+using namespace std;
+
+
+void only1(vector<set<int>> &vs, set<int> &s1){
+    vector<set<int>>::iterator v;
+    set<int>::iterator p,t;
+    multiset<int> multiaux;
+    set<int> setaux;
+    for(v=vs.begin();v!=vs.end();++v){
+            for(p=(*v).begin();p!=(*v).end();++p){
+                multiaux.insert(*p);
+                if(!setaux.count(*p)){
+                    setaux.insert(*p);
+                }
+        }
+    }
+    for(t=setaux.begin();t!=setaux.end();++t){
+        if(multiaux.count(*t)==1){
+                s1.insert(*t);
+            }
+        }
+}
+
+int main(){
+    vector<set<int>> vs;
+    vector<set<int>>::iterator j;
+    set<int> s1,s2,sfinal;
+    set<int>::iterator c;
+    s1.insert(1);s1.insert(2);s1.insert(3);
+    s2.insert(2);s2.insert(3);s2.insert(4);
+    vs.push_back(s1);vs.push_back(s2);
+    only1(vs,sfinal);
+
+    for(set<int>::iterator it = sfinal.begin(); it!=sfinal.end(); ++it)
+        if (it == --sfinal.end())
+            cout << *it;
+        else
+            cout << *it << ", ";
+    cout << endl;
+
+
+    return 0;
+}

@@ -1,0 +1,68 @@
+#include <iostream>
+#include <set>
+#include <stdlib.h>
+#include <string>
+
+using namespace std;
+
+
+set <int> no_interseccion (set<int> a, set<int> b, set <int> c){
+    set <int> nuevo_conjunto;
+    set <int>::iterator q,p,t;
+    for(q=a.begin();q!=a.end();++q){
+        if(!b.count(*q) && !c.count(*q))
+            nuevo_conjunto.insert(*q);
+    }
+    for(p=b.begin();p!=b.end();++p){
+        if(!a.count(*p) && !c.count(*p))
+            nuevo_conjunto.insert(*p);
+    }
+    for(t=c.begin();t!=c.end();++t){
+        if(!a.count(*t) && !b.count(*t))
+            nuevo_conjunto.insert(*t);
+    }
+    return nuevo_conjunto;
+}
+
+void printSet(set<int> s){
+    for(set<int>::iterator it = s.begin(); it!=s.end(); ++it)
+        if (it == --s.end())
+            cout << *it;
+        else
+            cout << *it << ", ";
+    cout << endl;
+}
+
+int main(int argc, char* argv[]){
+    set<int> a,b,c;
+    a.insert(1);a.insert(2);a.insert(3);
+    b.insert(1);b.insert(2);b.insert(3);
+    c.insert(1);c.insert(2);c.insert(3);
+    int conjunto = 0;
+    /*
+    for(int i = 1; i<argc; ++i){
+        if(argv[i][0]=='-')
+            ++conjunto;
+        else{
+            if (argv[i][0]=='e')
+                continue;
+            else{
+                if(conjunto==0)
+                    a.insert(atoi(argv[i]));
+                else if(conjunto==1)
+                    b.insert(atoi(argv[i]));
+                else if(conjunto==2)
+                    c.insert(atoi(argv[i]));
+            }
+        }
+    }*/
+    cout << "Conjunto A: ";
+    printSet(a);
+    cout << "Conjunto B: ";
+    printSet(b);
+    cout << "Conjunto C: ";
+    printSet(c);
+    cout << "Resultado: ";
+    printSet(no_interseccion(a,b,c));
+    return 0;
+}
