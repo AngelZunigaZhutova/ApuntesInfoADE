@@ -1,0 +1,97 @@
+
+/**
+ * @author Raúl Martínez Bustos
+ * @author Manuel Marín Rodríguez
+ * @date  Viernes 17 de Diciembre
+**/
+
+
+#include <iostream>
+#include <cmath>
+#include <list>
+#include <utility>
+
+using namespace std;
+
+typedef pair<int, int> intervalo;
+
+//Función auxiliar para simplificar el código (hacer la segunda parte)
+void fusionar(intervalo x, list<intervalo>& L) {
+    // it empieza en el primer dato de L2 y lo recorrerá
+    auto it = L.begin();
+    // Recorremos hasta encontrar donde fusionar x
+    while (it != L.end() && it->second < x.first) ++it;
+    // Fusionamos x
+    while (it != L.end() && it->first <= x.second) {
+        x.first = min(x.first, it->first);
+        x.second = max(x.second, it->second);
+        // Eliminamos el intervalo actual
+        it = L.erase(it);
+    }
+    // Insertamos x
+    L.insert(it, x);
+}
+
+//Función principal
+bool Extraer(list<intervalo> & L1, intervalo x, list<intervalo> & L2) {
+    //Primeor hacemos la extracción de L1
+    //Recorremos L1
+    for (auto it = L1.begin(); it != L1.end(); ++it) {
+        //Si cumple las condiciones lo cambiamos
+        if (it->first <= x.first && it->second >= x.second) {
+            if (it->first < x.first) L1.insert(it, {it->first, x.first - 1});
+            if (it->second > x.second) L1.insert(it, {x.second + 1, it->second});
+            //Eliminamos el actual
+            L1.erase(it);
+            //UUna vez hecha la extracción en L1, fusionamos x en L2
+            fusionar(x,L2);
+            //Si se ha podido extraer devolvemos true
+            return true;
+        }
+    }
+    //Si ha terminado el for y no se ha devuelto true es que no s eha logrado la extracción
+    return false;
+}
+
+//Función auxiliar para ayudarme en el main a escribir el código
+void imprimir(list<intervalo>& L1, list<intervalo>& L2) {
+    //Imprimimos L1
+    cout << "L1: ";
+    for (auto [ini, fin] : L1) cout << "[" << ini << ", " << fin << "] ";
+    //Imprimimos L2
+    cout << endl << "L2: ";
+    for (auto [ini, fin] : L2) cout << "[" << ini << ", " << fin << "] ";
+    cout << endl;
+}
+
+//El main() es para comprobar si la función realizada es correcta
+int main() {
+    //Listo todos los intervalos para comprobarlo
+    list<intervalo> L1 = {{1, 7}, {10, 14}, {18, 20}, {25, 26}};
+    list<intervalo> L2 = {{0, 1}, {14, 16}, {20, 23}};
+    list<intervalo> L3 = {{1, 7}, {10, 22}, {25, 26}};
+    list<intervalo> L4 = {{0, 1}, {14, 16}, {20, 23}};
+
+    intervalo x = {12, 14};
+    intervalo x1 = {12, 20};
+
+    /////////////////////////////////////////////////////////////////////////
+    //PRIMER EJEMPLO
+    cout << "Enunciado 1: " << endl;
+    imprimir (L1, L2);
+    cout << "Solucion 1: " << endl;
+    if (Extraer(L1, x, L2)) imprimir(L1, L2);
+    else cout << "No se pudo realizar la extracción." << endl;
+    /////////////////////////////////////////////////////////////////////////
+    cout << endl;
+
+    /////////////////////////////////////////////////////////////////////////
+    //SEGUNDO EJEMPLO
+    cout << "Enunciado 2: " << endl;
+    imprimir (L3, L4);
+    cout << "Solucion 2: " << endl;
+    if (Extraer(L3, x1, L4)) imprimir(L3, L4);
+    else cout << "No se pudo realizar la extracción." << endl;
+    /////////////////////////////////////////////////////////////////////////
+    return 0;
+}
