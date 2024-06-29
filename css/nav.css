@@ -46,6 +46,7 @@ header .logo {
 
 .logo img {
     width: 40px;
+    transition: 1s;
 }
 
 header ul li {
@@ -60,16 +61,29 @@ header ul li a {
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: 600;
-    transition: 0.7s
+    transition: 1s
+}
+
+header ul li a:hover {
+    font-size: x-large;
+}
+
+.logo img:hover {
+    width: 50px;
 }
 
 /*Propiedades que adquiere la clase abajo cunaod se detecta que se realiza un scroll sobre la página*/
 
 header.abajo {
-    background: rgba(255, 215, 0);
-    padding: 5px 10px;
+    background: #0662dd;
+    padding: 0px 0px 20px 0px;
 }
 
 header.abajo ul li a {
     color: black
+}
+
+header.abajo ul li a:hover {
+    font-size: x-large;
+
 }
